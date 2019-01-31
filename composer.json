@@ -19,15 +19,15 @@
             "Thujohn\\Twitter": "src/"
         }
     },
-"extra": {
-    "laravel": {
-      "providers": [
-        "Thujohn\\Twitter\\TwitterServiceProvider.php"
-      ],
-	"aliases": {
-		"Twitter": "Thujohn\\Twitter\\Facades\\Twitter.php"
-	}
-    }
-  },
+ "extra": {
+        "laravel": {
+            "providers": [
+                "Thujohn\\Twitter\\TwitterServiceProvider"
+            ],
+            "aliases": {
+                "Twitter": "Thujohn\\Twitter\\Facades\\Twitter"
+            }
+        }
+    },
     "minimum-stability": "stable"
 }
