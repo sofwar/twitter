@@ -1,7 +1,13 @@
 {
     "name": "sofwar/twitter",
     "description": "Twitter API for Laravel",
-	"keywords": ["twitter", "laravel", "laravel4", "laravel5", "lumen"],
+    "keywords": [
+        "twitter",
+        "laravel",
+        "laravel4",
+        "laravel5",
+        "lumen"
+    ],
     "license": "MIT",
     "authors": [
         {
@@ -23,7 +29,7 @@
             "SofWar\\Twitter": "src/"
         }
     },
- "extra": {
+    "extra": {
         "laravel": {
             "providers": [
                 "SofWar\\Twitter\\TwitterServiceProvider"
