@@ -1,6 +1,6 @@
 # Twitter
 
-Twitter API for Laravel 4/5, Lumen
+Twitter API for Laravel 5, Lumen
 
 You need to create an application and create your access token in the [Application Management](https://apps.twitter.com/).
 
