@@ -59,8 +59,6 @@ class TwitterServiceProvider extends ServiceProvider
                     __DIR__ . '/../../config/config.php' => config_path('ttwitter.php'),
                 ]);
             }
-        } else if ($laravelVersion == 4) {
-            $this->package('thujohn/twitter', 'ttwitter', __DIR__ . '/../..');
         }
 
         $this->app->singleton(Twitter::class, function () use ($app) {

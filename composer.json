@@ -20,7 +20,7 @@
     },
     "autoload": {
         "psr-0": {
-            "Thujohn\\Twitter": "src/"
+            "SofWar\\Twitter": "src/"
         }
     },
  "extra": {

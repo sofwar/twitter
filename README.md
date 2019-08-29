@@ -34,6 +34,12 @@ TWITTER_ACCESS_TOKEN=
 TWITTER_ACCESS_TOKEN_SECRET=
 ```
 
+### Lumen
+
+Add the following snippet to the `bootstrap/app.php` file under the providers section as follows:
+```
+$app->register(SofWar\Twitter\TwitterServiceProvider::class);
+```
 
 ## Special parameter
 
