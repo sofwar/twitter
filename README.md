@@ -34,28 +34,6 @@ TWITTER_ACCESS_TOKEN=
 TWITTER_ACCESS_TOKEN_SECRET=
 ```
 
-### Laravel 4
-
-Now open up `/config/app.php` and add the service provider to your `providers` array.
-```php
-'providers' => [
-	SofWar\Twitter\TwitterServiceProvider::class,
-]
-```
-
-Now add the alias.
-```php
-'aliases' => [
-	'Twitter' => SofWar\Twitter\Facades\Twitter::class,
-]
-```
-
-Run `php artisan config:publish sofwar/twitter` and modify the config file with your own informations.
-```
-/app/config/packages/sofwar/twitter/config.php
-```
-Also, make sure to remove the env in the config file and replace it with your information.
-
 
 ## Special parameter
 
