@@ -1,6 +1,6 @@
 # Twitter
 
-Twitter API for Laravel 4/5, Lumen
+Twitter API for Laravel 5, Lumen
 
 You need to create an application and create your access token in the [Application Management](https://apps.twitter.com/).
 
@@ -34,28 +34,12 @@ TWITTER_ACCESS_TOKEN=
 TWITTER_ACCESS_TOKEN_SECRET=
 ```
 
-### Laravel 4
+### Lumen
 
-Now open up `/config/app.php` and add the service provider to your `providers` array.
-```php
-'providers' => [
-	SofWar\Twitter\TwitterServiceProvider::class,
-]
+Add the following snippet to the `bootstrap/app.php` file under the providers section as follows:
 ```
-
-Now add the alias.
-```php
-'aliases' => [
-	'Twitter' => SofWar\Twitter\Facades\Twitter::class,
-]
+$app->register(SofWar\Twitter\TwitterServiceProvider::class);
 ```
-
-Run `php artisan config:publish sofwar/twitter` and modify the config file with your own informations.
-```
-/app/config/packages/sofwar/twitter/config.php
-```
-Also, make sure to remove the env in the config file and replace it with your information.
-
 
 ## Special parameter
 
