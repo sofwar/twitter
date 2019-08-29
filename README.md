@@ -1,66 +1,28 @@
 # Twitter
 
-Twitter API for Laravel 4/5
+Twitter API for Laravel 4/5, Lumen
 
 You need to create an application and create your access token in the [Application Management](https://apps.twitter.com/).
 
-[![Build Status](https://travis-ci.org/thujohn/twitter.png?branch=master)](https://travis-ci.org/thujohn/twitter)
-
-
 ## Installation
 
-Add `thujohn/twitter` to `composer.json`.
+Add `sofwar/twitter` to `composer.json`.
 ```
-"thujohn/twitter": "~2.0"
+"sofwar/twitter": "~1.0"
 ```
 
 Run `composer update` to pull down the latest version of Twitter.
 
 Or run
 ```
-composer require thujohn/twitter
+composer require sofwar/twitter
 ```
-
-Now open up `/config/app.php` and add the service provider to your `providers` array.
-```php
-'providers' => [
-	Thujohn\Twitter\TwitterServiceProvider::class,
-]
-```
-
-Now add the alias.
-```php
-'aliases' => [
-	'Twitter' => Thujohn\Twitter\Facades\Twitter::class,
-]
-```
-
-
-## Upgrading from 1.x.x
-
-The package now requires PHP >= 5.4.0
-
-Facade has changed (Thujohn\Twitter\Facades\Twitter)
-
-Config file has been updated (debug, UPLOAD_URL, ACCESS_TOKEN_URL, REQUEST_TOKEN_URL)
-
-set_new_config() has been renamed reconfig()
-
 
 ## Configuration 
 
-### Laravel 4
-
-Run `php artisan config:publish thujohn/twitter` and modify the config file with your own informations.
-```
-/app/config/packages/thujohn/twitter/config.php
-```
-Also, make sure to remove the env in the config file and replace it with your information.
-
-
 ### Laravel 5
 
-Run `php artisan vendor:publish --provider="Thujohn\Twitter\TwitterServiceProvider"` and modify the config file with your own information.
+Run `php artisan vendor:publish --provider="SofWar\Twitter\TwitterServiceProvider"` and modify the config file with your own information.
 ```
 /config/ttwitter.php
 ```
@@ -71,6 +33,28 @@ TWITTER_CONSUMER_SECRET=
 TWITTER_ACCESS_TOKEN=
 TWITTER_ACCESS_TOKEN_SECRET=
 ```
+
+### Laravel 4
+
+Now open up `/config/app.php` and add the service provider to your `providers` array.
+```php
+'providers' => [
+	SofWar\Twitter\TwitterServiceProvider::class,
+]
+```
+
+Now add the alias.
+```php
+'aliases' => [
+	'Twitter' => SofWar\Twitter\Facades\Twitter::class,
+]
+```
+
+Run `php artisan config:publish sofwar/twitter` and modify the config file with your own informations.
+```
+/app/config/packages/sofwar/twitter/config.php
+```
+Also, make sure to remove the env in the config file and replace it with your information.
 
 
 ## Special parameter
